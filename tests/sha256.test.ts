@@ -1,4 +1,4 @@
-import { expect, test } from "vitest";
+import { test, expect } from "vitest";
 import { sha256 } from "@noble/hashes/sha2.js";
 
 test("SHA-256 hash length", () => {

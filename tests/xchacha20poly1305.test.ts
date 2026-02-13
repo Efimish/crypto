@@ -1,4 +1,4 @@
-import { expect, test } from "vitest";
+import { test, expect } from "vitest";
 import { randomBytes } from "@noble/curves/utils.js";
 import { xchacha20poly1305 } from "@noble/ciphers/chacha.js";
 

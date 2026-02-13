@@ -1,4 +1,4 @@
-import { expect, test } from "vitest";
+import { test, expect } from "vitest";
 import { ed25519, x25519 } from "@noble/curves/ed25519.js";
 
 test("ed25519 sign and verify", () => {

@@ -1,4 +1,4 @@
-import { expect, test } from "vitest";
+import { test, expect } from "vitest";
 import { x25519 } from "@noble/curves/ed25519.js";
 
 test("x25519 static + static key exchange", () => {
