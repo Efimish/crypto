@@ -1,6 +1,6 @@
 import { expect, test } from "bun:test";
-import { randomBytes } from "@noble/curves/utils";
-import { xchacha20poly1305 } from "@noble/ciphers/chacha";
+import { randomBytes } from "@noble/curves/utils.js";
+import { xchacha20poly1305 } from "@noble/ciphers/chacha.js";
 
 test("XChaCha20-Poly1305 encrypt and decrypt", () => {
   const key = randomBytes(32);

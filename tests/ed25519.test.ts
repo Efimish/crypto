@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test";
-import { ed25519, x25519 } from "@noble/curves/ed25519";
+import { ed25519, x25519 } from "@noble/curves/ed25519.js";
 
 test("ed25519 sign and verify", () => {
   const { secretKey, publicKey } = ed25519.keygen();
@@ -13,7 +13,7 @@ test("convert ed25519 to x25519", () => {
   const ed25519SecretKey = ed25519.utils.randomSecretKey();
   const ed25519PublicKey = ed25519.getPublicKey(ed25519SecretKey);
 
-  const x25519SecretKey = ed25519.utils.toMontgomeryPriv(ed25519SecretKey);
+  const x25519SecretKey = ed25519.utils.toMontgomerySecret(ed25519SecretKey);
   const x25519PublicKey = ed25519.utils.toMontgomery(ed25519PublicKey);
 
   expect(x25519.getPublicKey(x25519SecretKey)).toEqual(x25519PublicKey);

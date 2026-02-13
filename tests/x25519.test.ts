@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test";
-import { x25519 } from "@noble/curves/ed25519";
+import { x25519 } from "@noble/curves/ed25519.js";
 
 test("x25519 static + static key exchange", () => {
   const keypairA = x25519.keygen();

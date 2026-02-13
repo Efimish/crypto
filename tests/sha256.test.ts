@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test";
-import { sha256 } from "@noble/hashes/sha2";
+import { sha256 } from "@noble/hashes/sha2.js";
 
 test("SHA-256 hash length", () => {
   const messages = [
